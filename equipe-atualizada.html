@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A2 ACADEMIA | Pomerode - SC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow:wght@400;600&amp;family=Barlow+Condensed:wght@700;900&amp;family=Barlow+Semi+Condensed:wght@700&amp;family=Space+Grotesk:wght@300;700;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#c8c6c6",
+                        "surface": "#131313",
+                        "on-secondary": "#303030",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-container": "#515151",
+                        "primary-fixed-dim": "#ffba20",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary-container": "#6b4c00",
+                        "outline-variant": "#514532",
+                        "surface-tint": "#ffba20",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#d5c4ab",
+                        "inverse-on-surface": "#313030",
+                        "on-surface": "#e5e2e1",
+                        "surface-variant": "#353535",
+                        "on-tertiary": "#303030",
+                        "inverse-primary": "#7c5800",
+                        "tertiary": "#e2e0e0",
+                        "surface-dim": "#131313",
+                        "primary-fixed": "#ffdea8",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#271900",
+                        "background": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#20201f",
+                        "primary-container": "#ffb800",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-bright": "#393939",
+                        "on-primary": "#412d00",
+                        "on-secondary-container": "#b6b5b4",
+                        "outline": "#9e8f78",
+                        "tertiary-container": "#c6c4c4",
+                        "primary": "#ffdca1",
+                        "surface-container-highest": "#353535",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed": "#e4e2e1",
+                        "secondary-container": "#474747",
+                        "on-primary-fixed-variant": "#5e4200",
+                        "tertiary-fixed": "#e4e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "120px",
+                        "margin": "64px",
+                        "stack-md": "24px",
+                        "stack-sm": "8px",
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Bebas Neue"],
+                        "label-sm": ["Barlow"],
+                        "display-xl": ["Bebas Neue"],
+                        "body-rg": ["Barlow"],
+                        "subtitle-md": ["Barlow Semi Condensed"],
+                        "condensed": ["Barlow Condensed", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "900"}],
+                        "body-rg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "subtitle-md": ["20px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
+        .industrial-border { border-left: 4px solid #ffb800; }
+        .diagonal-bg { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .team-card-image { clip-path: circle(45% at 50% 50%); }
+        body { min-height: max(884px, 100dvh); }
+    </style>
+</head>
+<body class="font-body-rg">
+<!-- TopAppBar -->
+<header class="bg-zinc-950/90 backdrop-blur-md dark:bg-black/90 docked full-width top-0 z-50 border-b border-zinc-800 flex justify-between items-center w-full px-6 py-4 fixed">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-500 bg-white flex items-center justify-center shrink-0">
+<img alt="A2 Academia Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiisjOVT0sDVyHoESYYbY9npEBuNri4lYhEVJb9ay4OVSwrG0QP615mIRzXniC_--47zLMXp61AyfGgACBE724NvKmdz1x2XrhOOs_OLTbVnEGS4JOXN4XYwexNkoZwc0N702QidCF7WlNRSeiYm0VHgnoya-eguWF_o8M8a3POKZU5LWhnvR3zeM13v7yjI2Wma5xdCY_ifJSiSsXoRQ-5ob4-vtdcnLBjKsWS0TjAJUtzs5Fn1jP_M1nk376RZl05rHauqMXtCA"/>
+</div>
+<a class="font-['Space_Grotesk'] font-black uppercase tracking-[0.3em] text-sm text-white ml-2" href="#inicio">A2 <span class="text-yellow-500">ACADEMIA</span></a>
+</div>
+<nav class="hidden md:flex gap-6 text-white font-label-sm uppercase text-[11px] tracking-widest">
+<a class="hover:text-primary-container transition-colors" href="#inicio">Início</a>
+<a class="hover:text-primary-container transition-colors" href="#sobre">Sobre</a>
+<a class="hover:text-primary-container transition-colors" href="#modalidades">Modalidades</a>
+<a class="hover:text-primary-container transition-colors" href="#equipe">Equipe</a>
+<a class="hover:text-primary-container transition-colors" href="#premios">Prêmios</a>
+<a class="hover:text-primary-container transition-colors" href="#horarios">Horários</a>
+<a class="hover:text-primary-container transition-colors" href="#localizacao">Localização</a>
+</nav>
+<button class="active:scale-95 transition-transform text-white md:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<!-- Simple Mobile Drawer -->
+<div class="hidden fixed inset-0 bg-black/95 z-[60] flex flex-col items-center justify-center gap-8 md:hidden" id="mobile-menu">
+<button class="absolute top-6 right-6 text-white" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+<a class="text-3xl font-headline-lg text-white" href="#inicio" onclick="document.getElementById('mobile-menu').classList.add('hidden')">INÍCIO</a>
+<a class="text-3xl font-headline-lg text-white" href="#sobre" onclick="document.getElementById('mobile-menu').classList.add('hidden')">SOBRE</a>
+<a class="text-3xl font-headline-lg text-white" href="#modalidades" onclick="document.getElementById('mobile-menu').classList.add('hidden')">MODALIDADES</a>
+<a class="text-3xl font-headline-lg text-white" href="#equipe" onclick="document.getElementById('mobile-menu').classList.add('hidden')">EQUIPE</a>
+<a class="text-3xl font-headline-lg text-white" href="#premios" onclick="document.getElementById('mobile-menu').classList.add('hidden')">PRÊMIOS</a>
+<a class="text-3xl font-headline-lg text-white" href="#horarios" onclick="document.getElementById('mobile-menu').classList.add('hidden')">HORÁRIOS</a>
+<a class="text-3xl font-headline-lg text-white" href="#localizacao" onclick="document.getElementById('mobile-menu').classList.add('hidden')">LOCALIZAÇÃO</a>
+</div>
+</header>
+<main class="pt-[60px]">
+<!-- 1. HERO SECTION -->
+<section class="relative h-[751px] flex flex-col justify-center items-center text-center px-6 overflow-hidden bg-zinc-950" id="inicio">
+<div class="absolute inset-0 z-0">
+<img alt="Atleta treinando na A2 Academia" class="w-full h-full object-cover opacity-40 grayscale" data-alt="dramatic wide shot of a modern industrial gym interior with heavy duty weightlifting equipment and professional lighting in dark tones" src="https://lh3.googleusercontent.com/aida/ADBb0ujvsUPZmy_Gjw2I-iM6ZAm9vEQBhBRWjWbTCu12jnRffOUWghM0jhRsgLB0yRNwlDbSUvlcgjVVn1RgM8RAlW1fPUHY95ozO4HKlEuVh5CNQA44reDieNctEY0fdpXjOYH_DLsortVT1ipTjzKiz8slbyb5hH2wOTlI9tQV-VwPlSNq9GYJe1qeKX9Zykzd7bNCCB5jO9QJdF4-4lLKc5nLDoD71JYwlGPqV85QJV3M7h9tIYMLaHr_RybPZsjXM24_wmQC1CinfA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
+</div>
+<!-- Diagonal Accent -->
+<div class="absolute top-1/4 -right-20 w-64 h-2 bg-primary-container rotate-45 opacity-50"></div>
+<div class="relative z-10 space-y-stack-md max-w-4xl">
+<h1 class="font-headline-lg text-display-xl uppercase leading-tight tracking-tight text-on-background">
+                    DESAFIE SEUS <span class="text-primary-container">LIMITES</span>
+</h1>
+<p class="font-subtitle-md text-subtitle-md max-w-xs mx-auto text-secondary uppercase">
+                    Musculação • Funcional • Resultados reais em Pomerode - SC
+                </p>
+<div class="pt-stack-lg">
+<button class="bg-primary-container text-on-primary-fixed font-headline-lg text-subtitle-md py-4 px-12 rounded uppercase active:scale-95 transition-transform shadow-[4px_4px_0_0_rgba(255,255,255,0.2)]">
+                        COMEÇAR AGORA
+                    </button>
+</div>
+</div>
+</section>
+<!-- 2. SOBRE -->
+<section class="bg-white text-on-secondary px-6 py-20" id="sobre">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<span class="inline-block bg-primary-container text-black font-label-sm text-label-sm px-3 py-1 mb-4">96% DE ALUNOS SATISFEITOS</span>
+<h2 class="font-headline-lg text-headline-lg text-black uppercase mb-6 leading-none">A ACADEMIA COMPLETA DE POMERODE</h2>
+<p class="font-body-rg text-body-rg text-zinc-700 mb-8">
+                        Localizada estrategicamente a apenas <span class="font-bold">200m da Praça Hanz Schmidt</span>, a A2 Academia offers infraestrutura de ponta e acompanhamento profissional para quem busca performance e saúde.
+                    </p>
+</div>
+<div class="flex-1 w-full">
+<div class="rounded-lg overflow-hidden border-l-8 border-primary-container shadow-2xl">
+<img alt="Treinamento Personalizado A2 Academia" class="w-full h-64 md:h-96 object-cover" data-alt="professional trainer supervising a student performing core exercises with a medicine ball in a modern industrial gym environment" src="https://lh3.googleusercontent.com/aida/ADBb0ugIzNnGEl72NTyKoxhtDAPLXSmJjgK7MUBZF6-GfcgvLBkB6mduEWsFclOZ_7gkO_Uv9O3ZCaPLZdUeNBSU9LEyuxq6xz4zHpRY78xO7pp8gSkEZ4_j1rJarqF-i5OhBN93spnl-U8n347iW3w43tiQJ3Rg0VmUIWrbwWmwnEIFZmgppEOM0phz9SoppXW68zbphvFdbj2MNc0tar7moB48xemgmlMvNoUQECDVgYzGK6StpOrArxou6CjeNwnTKqPkq_WqFu7UMA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. MODALIDADES -->
+<section class="bg-zinc-900 px-6 py-20" id="modalidades">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-12 text-center tracking-widest">MODALIDADES</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="bg-zinc-800 p-6 industrial-border flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="fitness_center">fitness_center</span>
+<h3 class="font-headline-lg text-subtitle-md text-white uppercase tracking-wider">MUSCULAÇÃO</h3>
+</div>
+<!-- Card 2 -->
+<div class="bg-zinc-800 p-6 industrial-border flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="speed">speed</span>
+<h3 class="font-headline-lg text-subtitle-md text-white uppercase tracking-wider">TREINO FUNCIONAL</h3>
+</div>
+<!-- Card 3 -->
+<div class="bg-zinc-800 p-6 industrial-border flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="groups">groups</span>
+<h3 class="font-headline-lg text-subtitle-md text-white uppercase tracking-wider">TREINAMENTO COLETIVO</h3>
+</div>
+<!-- Card 4 -->
+<div class="bg-zinc-800 p-6 industrial-border flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="event_available">event_available</span>
+<h3 class="font-headline-lg text-subtitle-md text-white uppercase tracking-wider">SEM AGENDAMENTO</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. EQUIPE ESPECIALIZADA -->
+<section class="bg-zinc-950 px-6 py-20" id="equipe">
+<div class="max-w-6xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-4 text-center tracking-widest">EQUIPE ESPECIALIZADA</h2>
+<p class="text-secondary font-label-sm uppercase tracking-widest mb-16 text-center">Responsáveis Técnicos Qualificados</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8">
+<!-- Tony Silva Marinho -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative w-56 h-56 mb-8">
+<div class="absolute inset-0 bg-primary-container rotate-6 transition-transform group-hover:rotate-12 duration-300"></div>
+<div class="w-full h-full relative z-10 border-4 border-zinc-900 overflow-hidden bg-zinc-800">
+<img alt="Tony Silva Marinho" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uge4-qrLaHrRr1nNg-J0GnlEb5LY0PO4Qj1cSm4p9C5kIj_elGoEsnjVXjFE_SU2_w6xhTO1marj2w22MF-3xuxGR8Hgc38ID2Jrw0nvnbDqVnLH9knX7JZI2Z7cNCgCru6zthoesXxoLkM27FhHsAcCpupzrW88hE7wXhRBoYO3CyTig8PtVL9T1T9sbsBRo3pkwiwmkzFw5rmZ5J1QXOVRjVcn0hwbektVDkwy3Cv1sIdpvf0AKWT5uvEOM4End8YCj4oAzJr8Q"/>
+</div>
+</div>
+<span class="bg-zinc-800 text-primary-container text-[10px] font-bold py-1 px-3 mb-3 uppercase tracking-widest">Responsável Técnico Principal</span>
+<h3 class="font-headline-lg text-2xl text-white uppercase mb-1 leading-none">Tony Silva Marinho</h3>
+<p class="text-secondary font-label-sm text-[12px] uppercase tracking-tighter">Cref: 037432-G/SC</p>
+</div>
+<!-- Benjamin Schmal -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative w-56 h-56 mb-8">
+<div class="absolute inset-0 bg-primary-container rotate-6 transition-transform group-hover:rotate-12 duration-300"></div>
+<div class="w-full h-full relative z-10 border-4 border-zinc-900 overflow-hidden bg-zinc-800">
+<img alt="Benjamin Schmal" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiZcOPYXqjiyM1ilcaB73DPIWthHY4Tf02ZYXOBhaAJzQoKhv2gHZANBJQnC34dXdHQG_Oos6HwozVtUuzuyPSBscAUL_sXBc61CR2F9ANcQnC8HSwf38y7NcQh-FUy8Q59XUyD0ClGQ1WS9meCsvIPb3l_o2HfPeCxfuhh8JPew4tLNI4NgaQQQjPF5UEq6RQfYNQ4_RzRfyY1Mn_qReVSG5ejYDZCoBn7bxUh7jaq7SunNEUJ9I78Uz-QaI4n2zOWIDiMjtiX"/>
+</div>
+</div>
+<span class="bg-zinc-800 text-zinc-400 text-[10px] font-bold py-1 px-3 mb-3 uppercase tracking-widest">Responsável Técnico Substituto</span>
+<h3 class="font-headline-lg text-2xl text-white uppercase mb-1 leading-none">Benjamin Schmal</h3>
+<p class="text-secondary font-label-sm text-[12px] uppercase tracking-tighter">Cref: 022622-G/SC</p>
+</div>
+<!-- André Emanuel Oliani Siebert -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative w-56 h-56 mb-8">
+<div class="absolute inset-0 bg-primary-container rotate-6 transition-transform group-hover:rotate-12 duration-300"></div>
+<div class="w-full h-full relative z-10 border-4 border-zinc-900 overflow-hidden bg-zinc-800">
+<img alt="André Emanuel Oliani Siebert" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uj6yjxHnCQkAsByXhuB7T3FtApyvSFeY_e3dzgeWnCFQg9xHJNHez7vaqmtGRyXVSsubvHTBsxavG_DUxOuIfOObKvivChwWFWPROui0vFNr3FdaUZrp9SDDJ-kVzAsvPo7yL_7yJSw3ISwp3CpDu9w0VGcuJ5nMv0-OROCPkOpzluwhwVy3PvBDXDZbL_Zh40huMEBy5Nt9ojySHQ2B4Izaj5ve-4f7S0LWA2QS-yUW04-jXiCwxUThHIOLC2S5XISET4k2n6q"/>
+</div>
+</div>
+<span class="bg-zinc-800 text-zinc-400 text-[10px] font-bold py-1 px-3 mb-3 uppercase tracking-widest">Responsável Técnico Substituto</span>
+<h3 class="font-headline-lg text-2xl text-white uppercase mb-1 leading-none">André Emanuel</h3>
+<p class="text-secondary font-label-sm text-[12px] uppercase tracking-tighter">Cref: 034032-G/SC</p>
+</div>
+<!-- Alexandre Kaziemerchack -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative w-56 h-56 mb-8">
+<div class="absolute inset-0 bg-primary-container rotate-6 transition-transform group-hover:rotate-12 duration-300"></div>
+<div class="w-full h-full relative z-10 border-4 border-zinc-900 overflow-hidden bg-zinc-800">
+<img alt="Alexandre Kaziemerchack" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ugiT_b2B3QZ-o6rcN8mKa61iNm8NTsq9dJwgW92a9jnmEDMc8XRf0m-FYlkz_QeXNGKHb4YswpBtadyq68rDV9QlS01N7IE8HtHpIA9SL16LOJWVyIJpApQv-i7mo86kpECdaNJ55UJ-DXoshGy3w7tWUW7dcx65_aHy75GDbFVS_TwH98A9SWqwpxJQ3PEe2C2n1XBg5S-JVlrJRAcQQgqAWXBTgu9oIwD5aL6UG2vQkjKSDCArT0yMSsFCyCIZPXFHRdgge-8"/>
+</div>
+</div>
+<span class="bg-zinc-800 text-zinc-400 text-[10px] font-bold py-1 px-3 mb-3 uppercase tracking-widest">Responsável Técnico Substituto</span>
+<h3 class="font-headline-lg text-2xl text-white uppercase mb-1 leading-none">Alexandre K.</h3>
+<p class="text-secondary font-label-sm text-[12px] uppercase tracking-tighter">Cref: 036945-G/SC</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. ESTRUTURA -->
+<section class="bg-white text-black px-6 py-20 text-center">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-12">ESTRUTURA</h2>
+<div class="max-w-4xl mx-auto grid grid-cols-3 md:grid-cols-6 gap-y-10 gap-x-4">
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-zinc-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-zinc-600" data-icon="shower">shower</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase">Chuveiro</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-zinc-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-zinc-600" data-icon="lock">lock</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase">Armários</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-zinc-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-zinc-600" data-icon="accessible">accessible</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase">Acessível</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-zinc-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-zinc-600" data-icon="directions_car">directions_car</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase">Estacionamento</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-zinc-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-zinc-600" data-icon="checkroom">checkroom</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase">Vestiário</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-zinc-100 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-zinc-600" data-icon="wifi">wifi</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase">Wi-Fi</span>
+</div>
+</div>
+</section>
+<!-- 6. AWARDS SECTION -->
+<section class="bg-zinc-100 px-6 py-20 overflow-hidden relative" id="premios">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg text-black uppercase mb-4 leading-none">QUALIDADE RECONHECIDA</h2>
+<p class="font-subtitle-md text-zinc-600 uppercase mb-8">Minha Empresa é Selo Destaque 2023 - Ângulo Pesquisa Digital</p>
+<p class="text-zinc-500 font-body-rg italic">"Compromisso com a excelência e resultados reais para nossos alunos em Pomerode."</p>
+</div>
+<div class="flex-1 flex justify-center relative">
+<div class="absolute inset-0 bg-primary-container/20 blur-3xl rounded-full scale-150"></div>
+<img alt="Selo Destaque 2023" class="relative z-10 w-64 md:w-80 h-auto drop-shadow-2xl transition-transform hover:scale-105 duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uiIN7lYtYrHFEZMeKV96-4hz5kOAZgG1o3932QqSSEssuDzUSr0Dili14QamrIhw6jy_gm2ryUSeFjZJDDilPCeqFyrt6h1M21J9GnWyS1FuzxtODW94oWDiBm7qPwvsocyofwLcpes1QtYmAOQnjzuaOHrRuEuMnzhph4fjiW6ENsrz32Nm1UH8YF7i5EeISjt5GIy9aRxxCJ2GrR9aQ4siYKVzhGgrFFqJIDmD4o9fjy6_yKEkN1j9kK7LAUMV9XCNytBeuVNOg"/>
+</div>
+</div>
+</section>
+<!-- 7. HORÁRIOS -->
+<section class="bg-primary-container text-black px-6 py-16" id="horarios">
+<div class="max-w-4xl mx-auto">
+<div class="flex items-center gap-4 mb-12 justify-center md:justify-start">
+<span class="material-symbols-outlined text-5xl" data-icon="schedule">schedule</span>
+<h2 class="font-headline-lg text-headline-lg uppercase">HORÁRIOS</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6 font-subtitle-md text-subtitle-md">
+<div class="flex justify-between border-b border-black/20 pb-2">
+<span>SEGUNDA A SEXTA</span>
+<span class="font-black">05h às 23h</span>
+</div>
+<div class="flex justify-between border-b border-black/20 pb-2">
+<span>SÁBADO E FERIADOS</span>
+<span class="font-black">15h às 18h</span>
+</div>
+<div class="flex justify-between">
+<span>DOMINGO</span>
+<span class="font-black">17h às 19h</span>
+</div>
+</div>
+<div class="flex flex-col justify-center items-center md:items-end">
+<p class="font-condensed font-black text-xl mb-4 text-center md:text-right uppercase">A única coisa fechada é pra desculpa!</p>
+<button class="w-full md:w-auto bg-black text-white font-headline-lg text-subtitle-md py-5 px-12 flex items-center justify-center gap-3 active:scale-[0.98] transition-transform shadow-lg">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                            FALAR NO WHATSAPP
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. AVALIAÇÕES -->
+<section class="bg-zinc-950 px-6 py-20 text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-4">O QUE DIZEM NOSSOS ALUNOS</h2>
+<div class="flex justify-center gap-1 mb-4 text-primary-container">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-secondary font-label-sm uppercase tracking-widest mb-12">Avaliação Máxima de Usuários</p>
+<div class="relative group max-w-2xl mx-auto">
+<img alt="Student success story at A2 Academia" class="w-full object-cover rounded hover:grayscale-0 transition-all duration-500 object-top h-[450px]" data-alt="Successful students smiling at A2 Academia" src="https://lh3.googleusercontent.com/aida/ADBb0ugUAm5PoUoJBBhGl1HFqaCFGBq2tWLUxJyX4pK8qu7J51SVOu2AuPr8caJpxksxX5U4Tt5u3GWrqhuKFmR27Um-4Ky9vN76VqMeEbzu8hxFR8qcQu3CQdlOYzZGY0Tdyo6CFmfeTqWk2CURrJPtompqOw1R0MJ0BBT-k68el0dMCaheqg70mHatPfuAIgHR1FgwcxlhwV_CfsZYLWasO8e0X5OUdk0hrW10EC8pRENU9dEVeG1fD3nyVd3twJ4-KCs4FQozChlYVg"/>
+<div class="absolute inset-0 border-2 rounded -m-2 pointer-events-none border-primary-container/50"></div>
+</div>
+</div>
+</section>
+<!-- 9. LOCALIZAÇÃO -->
+<section class="bg-white text-black px-6 py-20" id="localizacao">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-8">ONDE ESTAMOS</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container text-3xl" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold text-lg">R. Luiz Abry, 485</p>
+<p class="text-zinc-600">Centro, Pomerode - SC</p>
+</div>
+</div>
+<button class="w-full border-2 border-black text-black font-headline-lg text-subtitle-md py-4 uppercase hover:bg-black hover:text-white transition-colors">
+                            VER NO GOOGLE MAPS
+                        </button>
+<div class="pt-8 flex justify-start gap-8">
+<span class="material-symbols-outlined text-zinc-400 text-3xl hover:text-primary-container cursor-pointer transition-colors" data-icon="phone">phone</span>
+<span class="material-symbols-outlined text-zinc-400 text-3xl hover:text-primary-container cursor-pointer transition-colors" data-icon="share">share</span>
+<span class="material-symbols-outlined text-zinc-400 text-3xl hover:text-primary-container cursor-pointer transition-colors" data-icon="mail">mail</span>
+</div>
+</div>
+<div class="h-80 bg-zinc-200 rounded overflow-hidden relative border border-zinc-200 shadow-xl">
+<!-- Map Placeholder -->
+<div class="absolute inset-0 flex items-center justify-center bg-zinc-100" data-location="Pomerode, SC">
+<span class="material-symbols-outlined text-zinc-300 text-6xl" data-icon="map">map</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-950 text-center py-16 px-6 border-t-4 border-primary-container">
+<div class="max-w-4xl mx-auto">
+<div class="mb-8">
+<span class="text-3xl font-black text-white font-['Space_Grotesk'] tracking-widest">A2 <span class="text-primary-container">ACADEMIA</span></span>
+</div>
+<p class="font-subtitle-md text-secondary text-sm uppercase mb-12 leading-relaxed">
+                "Não limite seus desafios,<br/>desafie seus limites!"
+            </p>
+<div class="flex flex-col gap-4 text-zinc-500 font-label-sm text-[10px] tracking-widest uppercase">
+<span>@2026 A2 ACADEMIA - Desenvolvido por StratAI Consulting</span>
+<div class="flex justify-center gap-4"><a class="hover:text-white transition-colors" href="#">POLITICA DE PRIVACIDADE</a><a class="hover:text-white transition-colors" href="#">TERMOS DE USO</a></div>
+</div>
+</div>
+</footer>
+<!-- FAB for quick contact -->
+<div class="fixed bottom-6 right-6 z-50">
+<button class="bg-primary-container text-on-primary-fixed w-16 h-16 rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-transform hover:shadow-primary-container/20 hover:shadow-2xl">
+<span class="material-symbols-outlined scale-125" data-icon="bolt" data-weight="fill">bolt</span>
+</button>
+</div>
+</body></html>

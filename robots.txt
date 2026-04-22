@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://academiaa2pomerode.com.br/sitemap.xml

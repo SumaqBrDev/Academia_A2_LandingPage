@@ -1,0 +1,38 @@
+{
+  "name": "projects/3515334816284431496",
+  "projectId": "3515334816284431496",
+  "title": "Academia A2 Landing Page",
+  "visibility": "PRIVATE",
+  "createTime": "2026-04-22T12:37:00.979258Z",
+  "updateTime": "2026-04-22T15:02:13.098282Z",
+  "projectType": "TEXT_TO_UI_PRO",
+  "origin": "STITCH",
+  "deviceType": "MOBILE",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "SPACE_GROTESK",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#FFB800"
+  },
+  "screens": {
+    "index": {
+      "id": "2a0444a3ff0a43a0a4e30bbdb473cab3",
+      "sourceScreen": "projects/3515334816284431496/screens/2a0444a3ff0a43a0a4e30bbdb473cab3",
+      "x": 551,
+      "y": 6134,
+      "width": 390,
+      "height": 5082
+    },
+    "equipe-atualizada": {
+      "id": "df374d92c02a41c7a85abb42674695f5",
+      "sourceScreen": "projects/3515334816284431496/screens/df374d92c02a41c7a85abb42674695f5",
+      "x": 1478,
+      "y": 44316,
+      "width": 390,
+      "height": 8204
+    }
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}

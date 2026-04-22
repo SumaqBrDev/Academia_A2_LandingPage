@@ -1,0 +1,38 @@
+:root {
+  /* Colors */
+  --color-primary:       #FFB800;
+  --color-primary-hover: #FFA000;
+  --color-primary-glow:  rgba(255, 184, 0, 0.35);
+  --color-dark:          #2D2D2D;
+  --color-darker:        #1A1A1A;
+  --color-text:          #FFFFFF;
+  --color-text-muted:    #AAAAAA;
+  --color-border:        rgba(255,184,0,0.2);
+
+  /* Typography */
+  --font-display:  'Barlow Condensed', sans-serif;
+  --font-body:     'Barlow', sans-serif;
+  --fs-hero:       clamp(3.5rem, 8vw, 8rem);
+  --fs-h2:         clamp(2rem, 4vw, 3.5rem);
+  --fs-h3:         clamp(1.2rem, 2vw, 1.6rem);
+  --fs-body:       1rem;
+  --fw-black:      800;
+  --fw-bold:       700;
+  --fw-regular:    400;
+  --ls-wide:       0.12em;
+
+  /* Spacing */
+  --section-padding: clamp(60px, 8vw, 120px);
+  --container-max:   1200px;
+  --gap-cards:       24px;
+
+  /* Animation */
+  --transition-fast:   0.2s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow:   0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Borders */
+  --radius-card:   8px;
+  --radius-btn:    4px;
+  --border-accent: 4px solid var(--color-primary);
+}
