@@ -1,277 +1,393 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academia A2 | Musculação e Funcional em Pomerode, SC</title>
-  
-  <meta name="description" content="A Academia A2 em Pomerode oferece Musculação, Treinamento Funcional e acompanhamento personalizado para você alcançar seus objetivos com foco, energia e resultados reais.">
-  <meta name="keywords" content="academia, pomerode, musculação, treinamento funcional, fitness, saúde, personal trainer, academia sc">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Academia A2 | Energia e Foco em Pomerode">
-  <meta property="og:description" content="Transforme seu corpo e sua mente na melhor estrutura de Pomerode.">
-  <meta property="og:image" content="assets/og-image.jpg">
-  <meta property="og:url" content="https://academiaa2pomerode.com.br">
-  
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/main.css">
-  
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "name": "Academia A2",
-    "image": "https://academiaa2pomerode.com.br/assets/og-image.jpg",
-    "description": "Academia de musculação e treinamento funcional com equipamentos modernos e ambiente focado em resultados.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "R. Hermann Weege, 1000",
-      "addressLocality": "Pomerode",
-      "addressRegion": "SC",
-      "postalCode": "89107-000",
-      "addressCountry": "BR"
-    },
-    "telephone": "+5547999999999",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "05:00",
-        "closes": "22:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday"],
-        "opens": "08:00",
-        "closes": "12:00"
-      }
-    ],
-    "priceRange": "$$"
-  }
-  </script>
-</head>
-<body>
-  <a href="#main-content" class="sr-only">Pular para o conteúdo principal</a>
+<html class="dark" lang="pt-BR"><head></head><body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">```html
 
-  <header class="navbar">
-    <div class="container">
-      <a href="#" class="navbar__logo">
-        <!-- Logo text as fallback, should be replaced with logo-a2.png if available -->
-        <img src="images/logo-a2.png" alt="Academia A2 Logo" onerror="this.outerHTML='<h1 class=\'accent\'>A2 ACADEMIA</h1>'">
-      </a>
-      <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false">
-        ☰
-      </button>
-      <nav class="navbar__links">
-        <a href="#sobre">A Academia</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#horarios">Horários</a>
-        <a href="#localizacao">Contato</a>
-      </nav>
-    </div>
-  </header>
 
-  <main id="main-content">
-    <section id="hero" class="hero">
-      <div class="hero__bg"></div>
-      <div class="hero__diagonal"></div>
-      <div class="container">
-        <div class="hero__content reveal">
-          <span class="hero__badge">Força & Disciplina</span>
-          <h1 class="hero__title">Construa sua <span class="accent">melhor versão</span>.</h1>
-          <p class="hero__sub">Estrutura premium e acompanhamento focado em resultados no coração de Pomerode.</p>
-          <div class="hero__ctas">
-            <a href="https://wa.me/5547999999999" class="btn btn--primary" target="_blank" rel="noopener">Matricule-se Agora</a>
-            <a href="#horarios" class="btn btn--outline">Ver Horários</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="sobre" class="about">
-      <div class="container about__grid">
-        <div class="about__content reveal">
-          <h2 class="accent">Quem Somos</h2>
-          <p>A Academia A2 foi fundada com um propósito claro: elevar o padrão do fitness em Pomerode. Não somos apenas um espaço com máquinas, somos um ambiente projetado para performance, onde a cultura de resultados encontra o suporte profissional de excelência.</p>
-          
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__value" data-target="800">0</div>
-              <div class="stat__label">m² de Estrutura</div>
-            </div>
-            <div class="stat">
-              <div class="stat__value" data-target="2">0</div>
-              <div class="stat__label">Andares</div>
-            </div>
-            <div class="stat">
-              <div class="stat__value" data-target="15">0</div>
-              <div class="stat__label">Profissionais</div>
-            </div>
-          </div>
-        </div>
-        <div class="about__image reveal">
-          <!-- Placeholder image -->
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="Estrutura da Academia A2" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section id="servicos" class="services">
-      <div class="container">
-        <div class="services__header reveal">
-          <h2>Modalidades</h2>
-          <p>Oferecemos o treinamento certo para o seu objetivo, com acompanhamento dedicado e equipamentos de ponta.</p>
-        </div>
-        <div class="services__grid">
-          <article class="service-card reveal">
-            <span class="service-card__icon accent">🏋️‍♂️</span>
-            <h3 class="service-card__title">Musculação</h3>
-            <p>Área ampla com equipamentos modernos e biomecânica avançada para hipertrofia e fortalecimento.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-card__icon accent">🏃‍♀️</span>
-            <h3 class="service-card__title">Funcional</h3>
-            <p>Aulas dinâmicas focadas em mobilidade, resistência e queima de gordura acelerada.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-card__icon accent">🎯</span>
-            <h3 class="service-card__title">Personal Trainer</h3>
-            <p>Acompanhamento 100% individualizado para otimizar seus resultados com segurança.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="amenities">
-      <div class="container">
-        <div class="amenities__grid">
-          <div class="amenity-card reveal">
-            <span class="amenity-card__icon">❄️</span>
-            <span>Climatização Total</span>
-          </div>
-          <div class="amenity-card reveal">
-            <span class="amenity-card__icon">🚗</span>
-            <span>Estacionamento</span>
-          </div>
-          <div class="amenity-card reveal">
-            <span class="amenity-card__icon">🚿</span>
-            <span>Vestiários Premium</span>
-          </div>
-          <div class="amenity-card reveal">
-            <span class="amenity-card__icon">📶</span>
-            <span>Wi-Fi Grátis</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="horarios" class="schedule">
-      <div class="container about__grid">
-        <div class="schedule__content reveal">
-          <h2>Horários de <br><span class="accent">Funcionamento</span></h2>
-          <p class="schedule__note">Adapte seu treino à sua rotina. Estamos abertos nos principais horários do dia.</p>
-          <a href="https://wa.me/5547999999999" class="btn btn--outline" target="_blank" rel="noopener">Agendar Aula Experimental</a>
-        </div>
-        <div class="schedule__list reveal">
-          <div class="schedule__item">
-            <span class="schedule__day">Segunda a Sexta</span>
-            <span class="schedule__hours">05:00 - 22:00</span>
-          </div>
-          <div class="schedule__item">
-            <span class="schedule__day">Sábados</span>
-            <span class="schedule__hours">08:00 - 12:00</span>
-          </div>
-          <div class="schedule__item">
-            <span class="schedule__day">Domingos e Feriados</span>
-            <span class="schedule__hours">Fechado</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="localizacao" class="location">
-      <div class="container location__grid">
-        <div class="location__map reveal">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.428458999999!2d-49.176461!3d-26.738891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deebf2420a8c2f%3A0x6b9d6a1329c4fc17!2sR.%20Hermann%20Weege%2C%201000%20-%20Centro%2C%20Pomerode%20-%20SC%2C%2089107-000!5e0!3m2!1spt-BR!2sbr!4v1713800000000!5m2!1spt-BR!2sbr" title="Mapa da Academia A2" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="location__info reveal">
-          <h2>Onde <span class="accent">Estamos</span></h2>
-          <div class="contact-item">
-            <span class="contact-item__icon">📍</span>
-            <div>
-              <strong>Endereço</strong>
-              <p>R. Hermann Weege, 1000<br>Centro, Pomerode - SC<br>CEP 89107-000</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-item__icon">📱</span>
-            <div>
-              <strong>WhatsApp</strong>
-              <p><a href="https://wa.me/5547999999999" target="_blank" rel="noopener">(47) 99999-9999</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <h3 class="accent" style="margin-bottom: 1rem;">A2 ACADEMIA</h3>
-          <p>Sua academia de foco e energia em Pomerode, SC.</p>
-        </div>
-        <div>
-          <h4 style="margin-bottom: 1rem;">Links Rápidos</h4>
-          <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><a href="#sobre">A Academia</a></li>
-            <li><a href="#servicos">Modalidades</a></li>
-            <li><a href="#horarios">Horários</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 style="margin-bottom: 1rem;">Redes Sociais</h4>
-          <div class="footer__social">
-            <a href="#" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-              </svg>
-            </a>
-            <a href="#" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2024 Academia A2. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/5547999999999" class="whatsapp-fab" aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24">
-      <path d="M12.031 0C5.396 0 .012 5.385.012 12.018c0 2.128.555 4.205 1.611 6.03L.003 23.978l6.096-1.597c1.764.957 3.738 1.464 5.932 1.464 6.634 0 12.019-5.384 12.019-12.018S18.666 0 12.031 0zm-1.127 19.349h-.001c-1.782-.001-3.529-.48-5.06-1.386l-.363-.215-3.766.988 1.004-3.673-.236-.375c-1.005-1.591-1.536-3.432-1.536-5.32 0-5.498 4.475-9.974 9.974-9.974 2.665 0 5.172 1.038 7.054 2.921 1.884 1.884 2.921 4.391 2.921 7.054.001 5.499-4.476 9.975-9.99 9.975x"/>
-      <path d="M17.525 14.152c-.302-.151-1.791-.884-2.068-.985-.276-.101-.477-.151-.678.151-.201.302-.779.985-.955 1.186-.176.201-.352.226-.653.075-.302-.151-1.278-.471-2.434-1.503-.9-.802-1.507-1.793-1.683-2.094-.176-.302-.019-.464.132-.614.136-.136.302-.352.452-.528.151-.176.201-.302.302-.503.101-.201.05-.377-.025-.528-.075-.151-.678-1.633-.929-2.236-.245-.588-.493-.508-.678-.518-.176-.008-.377-.008-.578-.008-.201 0-.528.075-.804.377-.276.302-1.055 1.03-1.055 2.513 0 1.483 1.08 2.915 1.231 3.116.151.201 2.125 3.242 5.144 4.544.718.31 1.278.495 1.716.634.721.229 1.378.197 1.895.119.578-.088 1.791-.734 2.042-1.443.251-.709.251-1.317.176-1.443-.075-.126-.276-.201-.578-.352z"/>
-    </svg>
-  </a>
-
-  <!-- Scripts -->
-  <script src="js/main.js" defer></script>
-  <script src="js/analytics.js" defer></script>
-</body>
-</html>
+    <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A2 ACADEMIA | UNCOMPROMISING PERFORMANCE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow:wght@400;600;700&amp;family=Barlow+Semi+Condensed:wght@700&amp;family=Space+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-industrial {
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.5);
+        }
+        .grayscale-map {
+            filter: grayscale(100%) invert(90%) contrast(90%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#0e0e0e",
+                      "primary": "#ffdca1",
+                      "surface-container-high": "#2a2a2a",
+                      "surface-bright": "#393939",
+                      "surface": "#131313",
+                      "outline": "#9e8f78",
+                      "on-primary-fixed-variant": "#5e4200",
+                      "on-secondary-container": "#b6b5b4",
+                      "tertiary": "#e2e0e0",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "on-surface-variant": "#d5c4ab",
+                      "surface-dim": "#131313",
+                      "inverse-surface": "#e5e2e1",
+                      "primary-fixed": "#ffdea8",
+                      "on-tertiary-fixed-variant": "#464747",
+                      "on-secondary": "#303030",
+                      "on-error-container": "#ffdad6",
+                      "surface-container": "#20201f",
+                      "primary-container": "#ffb800",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "tertiary-fixed-dim": "#c8c6c6",
+                      "secondary-fixed": "#e4e2e1",
+                      "inverse-on-surface": "#313030",
+                      "secondary-container": "#474747",
+                      "on-primary": "#412d00",
+                      "on-surface": "#e5e2e1",
+                      "surface-container-highest": "#353535",
+                      "secondary-fixed-dim": "#c8c6c6",
+                      "on-primary-container": "#6b4c00",
+                      "on-error": "#690005",
+                      "background": "#131313",
+                      "surface-variant": "#353535",
+                      "error": "#ffb4ab",
+                      "tertiary-fixed": "#e4e2e2",
+                      "outline-variant": "#514532",
+                      "on-secondary-fixed-variant": "#474747",
+                      "on-tertiary": "#303030",
+                      "primary-fixed-dim": "#ffba20",
+                      "on-tertiary-container": "#515151",
+                      "tertiary-container": "#c6c4c4",
+                      "on-background": "#e5e2e1",
+                      "inverse-primary": "#7c5800",
+                      "on-primary-fixed": "#271900",
+                      "secondary": "#c8c6c6",
+                      "surface-tint": "#ffba20",
+                      "error-container": "#93000a",
+                      "surface-container-low": "#1c1b1b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-padding": "120px",
+                      "margin": "64px",
+                      "unit": "4px",
+                      "stack-sm": "8px",
+                      "stack-lg": "48px",
+                      "stack-md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "subtitle-md": ["Barlow Semi Condensed"],
+                      "display-xl": ["Bebas Neue"],
+                      "headline-lg": ["Bebas Neue"],
+                      "label-sm": ["Barlow"],
+                      "body-rg": ["Barlow"],
+                      "space-grotesk": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "subtitle-md": ["20px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "display-xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "0.02em", "fontWeight": "900"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-rg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+      </script>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 h-20 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800">
+<div class="flex justify-between items-center px-8 md:px-12 max-w-[1440px] mx-auto h-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-amber-400" data-icon="menu">menu</span>
+<span class="text-2xl font-black tracking-[0.3em] text-zinc-400 dark:text-zinc-500 [text-shadow:_0_0_0_#FFB800] [&amp;_span]:text-amber-400 font-space-grotesk font-bold uppercase tracking-[0.2em]">A2 <span>ACADEMIA</span></span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-amber-400 border-b-2 border-amber-400 pb-1" href="#">HOME</a>
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-400 font-medium hover:text-white transition-colors" href="#">MODALIDADES</a>
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-400 font-medium hover:text-white transition-colors" href="#">SCHEDULE</a>
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-400 font-medium hover:text-white transition-colors" href="#">TEAM</a>
+</nav>
+<button class="bg-primary-container text-zinc-950 px-6 py-2 rounded-lg font-space-grotesk font-bold uppercase tracking-widest text-xs hover:bg-amber-400 hover:scale-95 transition-all duration-100">
+            JOIN NOW
+        </button>
+</div>
+</header>
+<main>
+<!-- 1. Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Gym Hero" class="w-full h-full object-cover grayscale -scale-x-100" data-alt="Man performing chest press on weight bench in a dark atmospheric gym" src="https://lh3.googleusercontent.com/aida/ADBb0ugHp7R6g794THP2Ozqq89pGf-H2tArgJLNjP0ckfcJfWbuG0YBm6K6TpQtOgtR0nNtvfceO7TTnUyfEtgNXrqJx8Rv8LiN5ZWYPVHY5jX_9FYD0AhKA-sTU5vtimFCLOfZkr38BDZcClw3SwHZsZE21BDY4Gj5Y63JIO48v6FlFf46u3Zvq3gcTnHsq_zs1Qqkk8l7-B9CUPnbMBVIoLt1XIVHzVHCnUxHo1RdRodOBRkfXw0odBpFC0i-3_QaIa5GTKXJrpcJ5Ug"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-margin max-w-[1440px] mx-auto w-full">
+<div class="max-w-4xl border-l-8 border-primary-container pl-stack-md">
+<p class="font-subtitle-md text-subtitle-md text-primary-container mb-stack-sm">A EXCELÊNCIA É O NOSSO PADRÃO</p>
+<h1 class="font-display-xl text-display-xl uppercase mb-stack-md leading-none text-white text-shadow-industrial">
+                    DESAFIE SEUS <br/> <span class="text-primary-container">LIMITES</span>
+</h1>
+<p class="font-body-rg text-body-rg text-secondary mb-stack-lg max-w-xl">
+                    Treine em um ambiente de alto rendimento com equipamentos de ponta e suporte profissional especializado em Pomerode.
+                </p>
+<div class="flex flex-wrap gap-stack-md">
+<button class="bg-primary-container text-on-primary px-10 py-4 font-headline-lg text-[20px] uppercase rounded-lg hover:brightness-110 transition-all">COMEÇAR AGORA</button>
+<button class="border-2 border-white text-white px-10 py-4 font-headline-lg text-[20px] uppercase rounded-lg hover:bg-white hover:text-black transition-all">VER PLANOS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. About (A Academia Completa) Section -->
+<section class="py-section-padding px-8 md:px-margin max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="relative group">
+<div class="absolute -inset-4 border-4 border-primary-container/20 group-hover:border-primary-container/40 transition-colors"></div>
+<img alt="A2 Academia Interior View" class="relative w-full h-[600px] object-cover rounded-lg" data-alt="Wide interior view of A2 Academia showing various weight machines, training areas, and industrial ceiling structure" src="https://lh3.googleusercontent.com/aida/ADBb0ugZWDrtOiX-EDsqqPcswBtX7F7gsICe257jBDB1I55EZ1jOfyVsvcV3cDaq0Q8qxXregT3WdSKy0P2brhQtln35lTIvmjgI4RaQNBl8ghYx0555qJRGEtXFSADvfiGLBpc9JiSkbPi8NExEDPYhoAP_OGpIt5xlDNKOQDv-OUmV9Po5g7XFeporOxEjdaxHEdx4-pXrdYoFoXTq7f_0nkvT5YRszDBWMgNavjdWuJySEFZ70qCzG8byy2HEiFof0RNCOeeUzSmNHA"/>
+</div>
+<div class="flex flex-col gap-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase leading-tight">
+                A ACADEMIA COMPLETA <br/> <span class="text-primary-container">DE POMERODE</span>
+</h2>
+<div class="w-24 h-2 bg-primary-container"></div>
+<p class="font-body-rg text-body-rg text-on-surface-variant leading-relaxed">
+                A A2 Academia redefine o concept de treinamento físico em Pomerode. Combinamos uma infraestrutura robusta de 1.000m² com as melhores metodologias de treino, focadas em resultados reais e duradouros.
+            </p>
+<div class="grid grid-cols-2 gap-gutter mt-stack-md">
+<div class="bg-surface-container p-stack-md border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="fitness_center">fitness_center</span>
+<h4 class="font-subtitle-md text-subtitle-md text-white mt-2">PESOS LIVRES</h4>
+<p class="font-label-sm text-label-sm text-on-secondary-container mt-1">ESTRUTURA COMPLETA</p>
+</div>
+<div class="bg-surface-container p-stack-md border-l-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="monitoring">monitoring</span>
+<h4 class="font-subtitle-md text-subtitle-md text-white mt-2">AVALIAÇÃO</h4>
+<p class="font-label-sm text-label-sm text-on-secondary-container mt-1">ACOMPANHAMENTO BIO</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Modalidades Section (Placeholder/Integrated in the design as features) -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="px-8 md:px-margin max-w-[1440px] mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase">MODALIDADES <span class="text-primary-container">DE TREINO</span></h2>
+<p class="font-subtitle-md text-subtitle-md text-on-surface-variant uppercase mt-2">DIVERSAS OPÇÕES PARA O SEU OBJETIVO</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-high p-8 border-b-4 border-primary-container hover:translate-y-[-8px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-5xl" data-icon="fitness_center">fitness_center</span>
+<h3 class="font-headline-lg text-2xl text-white mt-4 uppercase">MUSCULAÇÃO</h3>
+<p class="font-body-rg text-on-surface-variant mt-2">Equipamentos de última geração para hipertrofia e fortalecimento.</p>
+</div>
+<div class="bg-surface-container-high p-8 border-b-4 border-primary-container hover:translate-y-[-8px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-5xl" data-icon="directions_run">directions_run</span>
+<h3 class="font-headline-lg text-2xl text-white mt-4 uppercase">CARDIO</h3>
+<p class="font-body-rg text-on-surface-variant mt-2">Área aeróbica completa para melhora da resistência e queima calórica.</p>
+</div>
+<div class="bg-surface-container-high p-8 border-b-4 border-primary-container hover:translate-y-[-8px] transition-transform">
+<span class="material-symbols-outlined text-primary-container text-5xl" data-icon="groups">groups</span>
+<h3 class="font-headline-lg text-2xl text-white mt-4 uppercase">TREINO FUNCIONAL</h3>
+<p class="font-body-rg text-on-surface-variant mt-2">Exercícios dinâmicos focados em mobilidade e força integrada.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Estrutura Section (Already highlighted in About, but kept as conceptual separation) -->
+<!-- 5. Horários Section (Integrated in Ubique-nos but prioritized here for flow) -->
+<!-- 6. Corpo Técnico Section -->
+<section class="py-section-padding px-8 md:px-margin max-w-[1440px] mx-auto">
+<div class="mb-stack-lg flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase">CORPO <span class="text-primary-container">TÉCNICO</span></h2>
+<p class="font-subtitle-md text-subtitle-md text-on-surface-variant uppercase">CONHECIMENTO QUE GERA RESULTADO</p>
+</div>
+<div class="hidden md:block h-px flex-1 bg-zinc-800 mx-gutter mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Tony -->
+<div class="bg-surface-container-high rounded-lg overflow-hidden border-l-4 border-primary-container group">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Tony Silva" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="Professional male fitness trainer with athletic build, wearing black athletic gear, standing in an industrial gym setting with confident posture" src="https://lh3.googleusercontent.com/aida/ADBb0uj4vk0y_21fn5BKeCDpk8vExUbYf0Le8lBWE8pCOWAFuxuVLnHHWhbhDl2-Yw-uYCPSbPBpZBKD3ZVhQSEaTJ4N7GRwu8zFKrQI-GsxxIQwuA2veZSTHQ-bL4l2pMT_f-M2swAawkM8F0lLjLQqZ0UMV6yT8c8aaipACZkCUp5xC7yc_bu2n4HItXB_H9H7mjb0Kc7B35_uPqIjY_tvjK244Qs0HleZausxVnnp4IeEsYbP_ZL2w_MM_DXBkSCbJnoIGeM_QDyI"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-md text-white text-xl uppercase">Tony Silva Marinho</h3>
+<p class="font-label-sm text-primary-container mb-2 uppercase">Responsável Técnico Principal</p>
+<p class="font-label-sm text-zinc-500">Cref: 037432-G/SC</p>
+</div>
+</div>
+<!-- Benjamin -->
+<div class="bg-surface-container-high rounded-lg overflow-hidden border-l-4 border-primary-container group">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Benjamin Schmal" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="Serious fitness professional coach in dark gym apparel, sharp gaze, standing against an industrial brick wall background" src="https://lh3.googleusercontent.com/aida/ADBb0ujUVH3KpOg3xAG88x215kvVcQqZjgk4gEnon8a_Ie6WayXGaskknWAtU8p8qEAp_PavMxZactUmic-ClNj0JyV3gNzBVXOnB1yIUMcaYIYM5vAMvYfOiMYLkuyeTbLeVciv4KIMSK0fW-LakSo-G3RtnLP_xsgoGO1a_ycQdRbaYqeHRhfzAcjEGjdFSLlylfRPPkNkY1xAbnPqBM-6UVKUnEJyMaeM72AfIPYR8X6FsmH9hifrzM-WwsKHSi-XPeHOTyt-dVNipQ"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-md text-white text-xl uppercase">Benjamin Schmal</h3>
+<p class="font-label-sm text-primary-container mb-2 uppercase">Técnico Substituto</p>
+<p class="font-label-sm text-zinc-500">Cref: 022622-G/SC</p>
+</div>
+</div>
+<!-- André -->
+<div class="bg-surface-container-high rounded-lg overflow-hidden border-l-4 border-primary-container group">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="André Emanuel" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="Athletic male trainer in professional workout attire, mid-shot with dramatic lighting, industrial gym environment background" src="https://lh3.googleusercontent.com/aida/ADBb0ujqTh3zvu4Ugk7vBtqatj_DHq3ofkbKi5v3WmX_AmREWB4iyKIQiEYbgpyc1KW72MOz4zEao_Z0GDmUOljetbiGwSNFEnBb466lNZB12B38kv2BQZhyzubH3ouQSwgvhB43y8R7YEn56eZdOaxjn5xzhF8oICTAYo7Qt0MtZ3kfN9hPxjPWg1WSI4gGKElv-OGpPOf3Z13BO8PyHgDImMUI7A2RuINu7Dr5uy2VCOW6T8CFJF-EaavldGgK9_NWFLymcHKBHG9Xsg"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-md text-white text-xl uppercase">André Emanuel Oliani Siebert</h3>
+<p class="font-label-sm text-primary-container mb-2 uppercase">Técnico Substituto</p>
+<p class="font-label-sm text-zinc-500">Cref: 034032-G/SC</p>
+</div>
+</div>
+<!-- Alexandre -->
+<div class="bg-surface-container-high rounded-lg overflow-hidden border-l-4 border-primary-container group">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Alexandre Kaziemerchack" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="Portrait of a fit male instructor with professional athletic gear in a modern dark gym setting with blurred equipment behind" src="https://lh3.googleusercontent.com/aida/ADBb0ugXOzu9m8fmhqteTLAAuq2La7pv_njoRWloXN59FhN-9T7sMhInAn5xK4k27pTN1jmFejpTmN4e8JKtyePV3WSiHAM3aah_AiW6Mbf0dlhacPOUDEBLy5skDHoN_a9aWdN664qys3Ar1SrpMwCSY3rl7DHxVwvDe0YUV6odtLA8dVkgibZP87ehdXmZMitMsfLT2IAR-MJBpd27FM95Wa6K_pj6L9Mo96M5wB3n958Yu5yF3ITL7CYprqEsvUbdb7S_zqf5R-h_Ww"/>
+</div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-md text-white text-xl uppercase">Alexandre Kaziemerchack</h3>
+<p class="font-label-sm text-primary-container mb-2 uppercase">Técnico Substituto</p>
+<p class="font-label-sm text-zinc-500">Cref: 036943-G/SC</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. O Que Dizem Section -->
+<section class="bg-zinc-950 py-section-padding">
+<div class="px-8 md:px-margin max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 lg:order-1">
+<span class="material-symbols-outlined text-primary-container text-6xl mb-stack-md" data-icon="format_quote">format_quote</span>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-stack-md leading-tight">O QUE DIZEM <br/> <span class="text-primary-container">NOSSOS ALUNOS</span></h2>
+<div class="bg-surface-container-high p-stack-lg rounded-lg border-l-4 border-primary-container relative">
+<p class="font-subtitle-md text-white text-lg mb-stack-md italic leading-relaxed">
+                            "Treinar na A2 mudou completamente minha percepção sobre performance. A estrutura é impecável, mas o suporte técnico dos instrutores é o que realmente faz a diferença no meu dia a dia."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center font-bold text-zinc-950">RC</div>
+<div>
+<h4 class="font-bold text-white uppercase">Ricardo Camargo</h4>
+<p class="font-label-sm text-zinc-500">Membro há 3 anos</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 flex justify-center">
+<div class="relative w-full max-w-lg aspect-square">
+<div class="absolute inset-0 bg-primary-container rotate-6 rounded-lg opacity-20"></div>
+<img alt="Happy Student" class="relative w-full h-full object-cover rounded-lg" data-alt="Young man in mid-workout smiling at camera, athletic wear, visible perspiration, bright high-key lighting inside a clean modern fitness club" src="https://lh3.googleusercontent.com/aida/ADBb0uiUKfiERBnRGLssft6ZVFvF5EQtIg-qEhxMLy9xXTv-0EgkZy9yzuxfuG13G7SWC7RL9ef14xksiVDq4vO6SbOyHNPhIwxGYBO6Gw81igrMUXCbisff5WwieBkIvRbffOwHGmdp5g1NSCCKq_ePyjWcuU2fIoKBvKUo9C4HKNtwtaClfoUUtSXVDs_hnaH8nzXaPd5OKQay2Ab7s1ko6guzprbIbA4WUQrsczBvlh73WrY0PtqgaqvXvvqnK8wAsSg8fWUTjbKX"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Qualidade Reconhecida Section -->
+<section class="bg-surface-container-low py-section-padding">
+<div class="px-8 md:px-margin max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-stack-lg">
+<div class="w-full lg:w-1/2 flex justify-center">
+<img alt="Selo Destaque 2023 - Ângulo Pesquisa Digital" class="w-full max-w-md h-auto object-contain" data-alt="Digital seal of quality excellence 2023 from Ângulo Pesquisa Digital, featuring a golden scalloped border and blue background" src="https://lh3.googleusercontent.com/aida/ADBb0ujYG7yihx0EBMTrJkbUfXokghtJsbK4FXY-nPvlBeWx8G5apfK-UWgtH3IejxfOWXAKeT7FTXev0zagDg0sEeCBerAWEgT3k-WwwesAlgAg1NnJeBokNXT5MK_cYdlszSoTGiXi149-Yr2ezTYu6GP9Ry5BWJmoHWUOkm-T9Cq2Uv-9vYdMkYsCpzgEHC3V2DIhAKzVbAbYczlCb5CMABy4gl74PhH-ArKb2XKKDjP2SdWAq9Z280KA4e0lJ1OZU006zkYxn9aV"/>
+</div>
+<div class="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-stack-md">QUALIDADE RECONHECIDA</h2>
+<p class="font-body-rg text-body-rg text-on-surface-variant max-w-2xl">
+                    Nossa dedicação à excelência nos rendeu o reconhecimento como a melhor infraestrutura da região, priorizando sempre a segurança e o desenvolvimento técnico de nossos alunos.
+                </p>
+<div class="flex flex-wrap justify-center lg:justify-start gap-stack-lg mt-stack-lg">
+<div class="flex flex-col items-center lg:items-start">
+<span class="font-display-xl text-primary-container text-[64px]">10+</span>
+<span class="font-label-sm text-white uppercase tracking-widest">ANOS DE MERCADO</span>
+</div>
+<div class="flex flex-col items-center lg:items-start">
+<span class="font-display-xl text-primary-container text-[64px]">2k+</span>
+<span class="font-label-sm text-white uppercase tracking-widest">ALUNOS ATIVOS</span>
+</div>
+<div class="flex flex-col items-center lg:items-start">
+<span class="font-display-xl text-primary-container text-[64px]">15+</span>
+<span class="font-label-sm text-white uppercase tracking-widest">INSTRUTORES</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Ubique-nos Section (Including Horários) -->
+<section class="py-section-padding px-8 md:px-margin max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<div class="relative w-full h-[450px] lg:h-full min-h-[450px] bg-zinc-900 rounded-lg overflow-hidden border-2 border-primary-container/20">
+<iframe allowfullscreen="" class="grayscale-map w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.7618991678125!2d-49.17643572418524!3d-26.735431686708463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df0516b7617c09%3A0xc3194a282f99d63c!2sR.%20Luiz%20Abry%2C%20485%20-%20Centro%2C%20Pomerode%20-%20SC%2C%2089107-000!5e0!3m2!1spt-BR!2sbr!4v1715600000000!5m2!1spt-BR!2sbr">
+</iframe>
+<div class="absolute inset-0 pointer-events-none border-[12px] border-zinc-950/20"></div>
+</div>
+<div class="flex flex-col gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-white uppercase mb-4">UBIQUE-<span class="text-primary-container">NOS</span></h2>
+<div class="w-20 h-1.5 bg-primary-container mb-8"></div>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-space-grotesk font-bold text-white uppercase tracking-wider text-sm mb-1">LOCALIZAÇÃO</h4>
+<p class="font-body-rg text-on-surface-variant">R. Luiz Abry, 485 - Centro<br/>Pomerode - SC, 89107-000</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="call">call</span>
+<div>
+<h4 class="font-space-grotesk font-bold text-white uppercase tracking-wider text-sm mb-1">CONTATO</h4>
+<p class="font-body-rg text-on-surface-variant">(47) 3394-1613</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-space-grotesk font-bold text-white uppercase tracking-wider text-sm mb-1">HORÁRIOS DE ATENDIMENTO</h4>
+<div class="grid grid-cols-[100px_1fr] gap-y-2 mt-2">
+<span class="font-bold text-white text-xs uppercase">SEG - SEX:</span>
+<span class="font-body-rg text-on-surface-variant text-sm">05:00 — 22:00</span>
+<span class="font-bold text-white text-xs uppercase">SÁBADO:</span>
+<span class="font-body-rg text-on-surface-variant text-sm">08:00 — 12:00 / 14:00 — 17:00</span>
+<span class="font-bold text-primary-container text-xs uppercase">DOMINGO:</span>
+<span class="font-body-rg text-zinc-500 text-sm">FECHADO</span>
+</div>
+</div>
+</div>
+</div>
+<button class="mt-4 border-2 border-primary-container text-primary-container px-8 py-3 font-space-grotesk font-bold uppercase tracking-widest text-xs hover:bg-primary-container hover:text-zinc-950 transition-all self-start">
+                    COMO CHEGAR
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- 10. Footer -->
+<footer class="bg-zinc-950 w-full py-16 px-8 border-t-4 border-amber-400">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1440px] mx-auto border-t border-zinc-800 pt-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-xl font-black text-zinc-600 font-space-grotesk uppercase tracking-widest">A2 ACADEMIA</span>
+<p class="font-space-grotesk uppercase tracking-widest text-[10px] text-zinc-500">© 2026 A2 ACADEMIA - DESENVOLVIDO POR STRATAI CONSULTING.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-500 hover:text-amber-400 transition-colors" href="#">POLITICA DE PRIVACIDADE</a>
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-500 hover:text-amber-400 transition-colors" href="#">TERMOS DE USO</a>
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-500 hover:text-amber-400 transition-colors" href="#">MODALITIES</a>
+<a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-500 hover:text-amber-400 transition-colors" href="#">SCHEDULE</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center hover:bg-primary-container hover:text-zinc-950 transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center hover:bg-primary-container hover:text-zinc-950 transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+</a>
+</div>
+</div>
+</footer>
+```</body></html>
