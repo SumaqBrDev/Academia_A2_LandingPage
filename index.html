@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="pt-BR">
+<html class="dark scroll-smooth" lang="pt-BR">
 
 <head>
   <meta charset="utf-8" />
@@ -124,13 +124,15 @@
       </div>
       <nav class="hidden md:flex items-center gap-8">
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-amber-400 border-b-2 border-amber-400 pb-1"
-          href="#">HOME</a>
+          href="#home">HOME</a>
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-200 font-medium hover:text-white transition-colors"
-          href="#">MODALIDADES</a>
+          href="#modalidades">MODALIDADES</a>
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-200 font-medium hover:text-white transition-colors"
-          href="#">SCHEDULE</a>
+          href="#equipe">EQUIPE</a>
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-200 font-medium hover:text-white transition-colors"
-          href="#">TEAM</a>
+          href="#planos">PLANOS</a>
+        <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-200 font-medium hover:text-white transition-colors"
+          href="#contato">CONTATO</a>
       </nav>
       <button
         class="bg-primary-container text-zinc-950 px-6 py-2 rounded-lg font-space-grotesk font-bold uppercase tracking-widest text-xs hover:bg-amber-400 hover:scale-95 transition-all duration-100">
@@ -140,7 +142,7 @@
   </header>
   <main>
     <!-- 1. Hero Section -->
-    <section class="relative h-screen w-full flex items-center overflow-hidden">
+    <section id="home" class="relative h-screen w-full flex items-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img alt="Gym Hero" class="w-full h-full object-cover grayscale -scale-x-100"
           data-alt="Man performing chest press on weight bench in a dark atmospheric gym"
@@ -208,7 +210,7 @@
       </div>
     </section>
     <!-- 3. Modalidades Section (Placeholder/Integrated in the design as features) -->
-    <section class="bg-surface-container-low py-section-padding">
+    <section id="modalidades" class="bg-surface-container-low py-section-padding">
       <div class="px-8 md:px-margin max-w-[1440px] mx-auto">
         <div class="text-center mb-stack-lg">
           <h2 class="font-headline-lg text-headline-lg text-white uppercase">MODALIDADES <span
@@ -245,7 +247,7 @@
     <!-- 4. Estrutura Section (Already highlighted in About, but kept as conceptual separation) -->
     <!-- 5. Horários Section (Integrated in Ubique-nos but prioritized here for flow) -->
     <!-- 6. Corpo Técnico Section -->
-    <section class="py-section-padding bg-[#2D2D2D]">
+    <section id="equipe" class="py-section-padding bg-[#2D2D2D]">
       <div class="px-8 md:px-margin max-w-[1440px] mx-auto">
         <div class="mb-stack-lg flex justify-between items-end">
           <div>
@@ -491,7 +493,7 @@
     </section>
 
     <!-- 9. Ubique-nos Section (Including Horários) -->
-    <section class="py-section-padding bg-[#2D2D2D]">
+    <section id="contato" class="py-section-padding bg-[#2D2D2D]">
       <div class="px-8 md:px-margin max-w-[1440px] mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div
@@ -563,13 +565,13 @@
       </div>
       <div class="flex flex-wrap justify-center gap-8">
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-300 hover:text-amber-400 transition-colors"
-          href="#">POLITICA DE PRIVACIDADE</a>
+          href="#">POLÍTICA DE PRIVACIDADE</a>
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-300 hover:text-amber-400 transition-colors"
           href="#">TERMOS DE USO</a>
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-300 hover:text-amber-400 transition-colors"
-          href="#">MODALITIES</a>
+          href="#modalidades">MODALIDADES</a>
         <a class="font-space-grotesk uppercase tracking-widest text-xs text-zinc-300 hover:text-amber-400 transition-colors"
-          href="#">SCHEDULE</a>
+          href="#contato">CONTATO</a>
       </div>
     </div>
   </footer>
